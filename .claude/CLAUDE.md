@@ -2,8 +2,8 @@
 
 ## Project Overview
 
-Scribe adalah platform CMS publishing light novel terpusat (bukan subdomain per translator) untuk freelance translator dan reader.
-Translator & admin login via SSO whitearchive.id. Reader sepenuhnya anonim, tanpa akun, tracking berbasis device.
+Scribe adalah salah satu project di bawah payung White Archive (bukan platform utama White Archive itu sendiri — root domain `whitearchive.id` adalah landing page ekosistem, di luar scope repo ini). Scribe adalah CMS publishing light novel terpusat (bukan subdomain per translator) untuk freelance translator dan reader, hidup di `scribe.whitearchive.id`.
+Translator & admin login via SSO whitearchive.id (identity provider bersama seluruh project White Archive). Reader sepenuhnya anonim, tanpa akun, tracking berbasis device.
 
 ## Repo Structure
 

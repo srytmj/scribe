@@ -12,7 +12,9 @@ Freelance translator light novel butuh platform terpusat untuk publish hasil ter
 
 ## Platform Model
 
-Satu platform terpusat (`whitearchive.id`) — **bukan** subdomain per translator. Semua novel dari semua translator tampil di satu katalog. Tiap novel/post ditandai translator pemiliknya; translator punya halaman profil sendiri sebagai identitas, tanpa perlu domain terpisah.
+Scribe adalah **salah satu project di bawah payung White Archive**, bukan platform utama/terpusat White Archive itu sendiri. `whitearchive.id` (root domain) adalah landing page White Archive yang mengenalkan ekosistem dan daftar seluruh project di bawahnya — di luar scope Scribe. Scribe hidup di subdomain sendiri (`scribe.whitearchive.id`, staging: `scribe.suryatmaja.dev`).
+
+Di dalam scope Scribe sendiri, modelnya tetap satu platform terpusat — **bukan** subdomain per translator. Semua novel dari semua translator Scribe tampil di satu katalog. Tiap novel/post ditandai translator pemiliknya; translator punya halaman profil sendiri sebagai identitas, tanpa perlu domain terpisah.
 
 ## Core User Stories
 

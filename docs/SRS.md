@@ -18,7 +18,9 @@
 
 ## Platform Model
 
-Satu platform terpusat. **Bukan** subdomain per translator. Semua novel dari semua translator tampil di satu katalog publik, ditandai kepemilikan translator masing-masing. Translator mendapat identitas lewat halaman profil (`/translator/{username}`), bukan domain terpisah.
+Scribe adalah salah satu project di bawah payung White Archive, bukan platform utama White Archive. `whitearchive.id` (root domain) adalah landing page ekosistem White Archive (daftar semua project) — di luar scope Scribe. Scribe berjalan di subdomain sendiri (`scribe.whitearchive.id`).
+
+Di dalam scope Scribe: satu platform terpusat. **Bukan** subdomain per translator. Semua novel dari semua translator tampil di satu katalog publik, ditandai kepemilikan translator masing-masing. Translator mendapat identitas lewat halaman profil (`/translator/{username}`), bukan domain terpisah.
 
 ---
 

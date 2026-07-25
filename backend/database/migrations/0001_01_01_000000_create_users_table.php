@@ -13,11 +13,18 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->string('sso_id')->unique();
             $table->string('name');
+            $table->string('username')->unique();
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('avatar')->nullable();
+            $table->enum('sso_role', ['user', 'superadmin']);
+            $table->enum('role', ['pending', 'translator', 'admin'])->default('pending');
+            $table->text('bio')->nullable();
+            $table->string('donation_url')->nullable();
+            $table->text('access_token')->nullable();
+            $table->text('refresh_token')->nullable();
+            $table->timestamp('token_expires_at')->nullable();
             $table->timestamps();
         });
 
