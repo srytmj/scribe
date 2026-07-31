@@ -1,0 +1,36 @@
+export interface User {
+    id: string;
+    name: string;
+    username: string | null;
+    email: string;
+    avatar: string | null;
+    role: 'pending' | 'translator' | 'admin';
+    is_banned: boolean;
+    ban_reason: string | null;
+}
+
+export interface MenuItem {
+    key: string;
+    label: string;
+    icon: string | null;
+    route_name: string | null;
+    parent_key: string | null;
+    sort_order: number;
+    is_maintenance: boolean;
+}
+
+export type PageProps<
+    T extends Record<string, unknown> = Record<string, unknown>,
+> = T & {
+    auth: {
+        user: User | null;
+    };
+    menus: MenuItem[];
+    flash: {
+        success: string | null;
+        error: string | null;
+        info: string | null;
+        undo_url: string | null;
+        undo_payload: Record<string, string[] | string | number | null> | null;
+    };
+};
